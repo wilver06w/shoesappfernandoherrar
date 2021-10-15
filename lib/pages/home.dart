@@ -15,6 +15,7 @@ List<String> imagenes = [
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final _size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -84,6 +85,7 @@ class Home extends StatelessWidget {
                       child: Image.network(
                         'https://images.squarespace-cdn.com/content/v1/58994956be65949bde46b264/1596234355030-FHEX12TB7XGVOF33A477/lululemon_bras_campaign_2020_Susana_Fitness_Training_Workout_0052_Vancouver_Canada_Matt_Korinek_Photographer_MK_Photography.jpg?format=1500w',
                         fit: BoxFit.cover,
+                        width: _size.width,
                         height: 400,
                       ),
                     ),
